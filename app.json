@@ -3,6 +3,7 @@
     "name": "tabsRouting",
     "slug": "tabsRouting",
     "version": "1.0.0",
+    "scheme": "tabs-routing",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -24,10 +25,17 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+      
+      
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+
+    }
   }
 }
